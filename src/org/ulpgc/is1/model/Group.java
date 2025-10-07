@@ -12,11 +12,27 @@ public class Group {
         this.contacts = new ArrayList<>();
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public List<Contact> getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(List<Contact> contacts) {
+        this.contacts = contacts;
+    }
+
     public void addContact(Contact contact) {
         contacts.add(contact);
     }
 
     public void removeContact(Contact contact) {
         contacts.remove(contact);
+    }
+
+    public void addContact(Contact contact) {
+        contacts.add(contact);
     }
 }

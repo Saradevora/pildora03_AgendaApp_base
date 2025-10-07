@@ -17,13 +17,27 @@ public abstract class Contact {
         this.address = new Address(street, number, floor, city);
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
     public void setEmail(String email) { //cambia el mail
         this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public void setTelephone(String telephone) {  //cambia el teléfono
         this.telephone = telephone;
     }
 
+    public String getTelephone() {
+        return telephone;
+    }
+
     public abstract String getName();
+
+
 }
